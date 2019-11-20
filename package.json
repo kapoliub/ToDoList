@@ -1,0 +1,28 @@
+{
+  "name": "fe_course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass -w src/assets/scss/ -o dist/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aandrushko/fe_course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aandrushko/fe_course/issues"
+  },
+  "homepage": "https://github.com/aandrushko/fe_course#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "get-google-fonts": "^1.2.0",
+    "node-sass": "^4.13.0",
+    "typeface-roboto": "0.0.75"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2"
+  }
+}
