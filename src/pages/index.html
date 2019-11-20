@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Calistoga|Caveat:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="../../dist/css/main.css">
+    <title>To Do List</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 header">
+            <h1>TO DO LIST</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="input-group mb-3">
+              <input id="inputTitle" type="text" class="form-control" placeholder="Enter your text" onfocus="this.value=''">
+              <div class="input-group-append">
+                <button id="addTitle" type="button" class="btn btn-info">ADD</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="listArea">
+              <ul id="listGroup">
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="buttonsArea d-flex justify-content-around">
+              <button class="btn btn-info col-3" onclick="hideShow()">Hide/Show completed items</button>
+              <button class="btn btn-info col-3" onclick="clearList()">Clear list</button>
+              <button class="btn btn-info col-3" onclick="deleteCompleted()">Delete completed items</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
