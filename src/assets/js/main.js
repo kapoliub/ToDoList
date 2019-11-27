@@ -24,10 +24,9 @@ function makeItemCompleted(id){
 }
 
 function clearList(){
-    let li = $('.item');
-    for(let i = li.length-1; i >= 0; i--){
-        li[i].remove();
-    }
+    $('.item').each(function(){
+        $(this).remove();
+    })
 }
 
 function hideShow(){
