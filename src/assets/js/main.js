@@ -2,7 +2,7 @@ function addNewListItem(){
     let randomID = String('itemID-' + Math.random() * 100000).split('.')[0];
     let inputTitle = $('#inputTitle').val();
     if($('#inputTitle').val().trim().length > 0){
-        $('#listGroup').append('<li id="' + randomID + '" class="item"><span>'+inputTitle+'</span><button class="removeItem"><i class="fas fa-times"></i></button></li>');
+        $('#listGroup').prepend('<li id="' + randomID + '" class="item"><span>'+inputTitle+'</span><button class="removeItem"><i class="fas fa-times"></i></button></li>');
         
         $('#' + randomID + ' .removeItem').on('click', function(){
             removeListItem(randomID);
