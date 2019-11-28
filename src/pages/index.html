@@ -27,7 +27,7 @@
             <div class="input-group mb-3">
               <input id="inputTitle" type="text" class="form-control" placeholder="Enter your text" onfocus="this.value=''">
               <div class="input-group-append">
-                <button id="addTitle" type="button" class="btn btn-info">ADD</button>
+                <button id="addTitle" type="button" class="btn btn-info" onclick="addNewListItem()">ADD</button>
               </div>
             </div>
           </div>
@@ -36,7 +36,6 @@
           <div class="col-12">
             <div class="listArea">
               <ul id="listGroup">
-                
               </ul>
             </div>
           </div>
@@ -52,6 +51,7 @@
         </div>
       </div>
     </section>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../assets/js/main.js"></script>
   </body>
 </html>
