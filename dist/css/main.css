@@ -1,0 +1,94 @@
+body {
+  background-color: #D0EAF7;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  box-shadow: 5px 5px 30px 1px grey;
+  border: 1px solid grey; }
+  .container .row {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .container .header {
+    text-align: center;
+    font-family: "Caveat", cursive; }
+    .container .header h1 {
+      font-size: 4em; }
+  .container .input-group {
+    font-family: "Calistoga", cursive;
+    padding: 0 80px; }
+    .container .input-group .form-control {
+      height: 70px;
+      font-size: 1.5em; }
+    .container .input-group .btn {
+      padding: 0 50px; }
+  .container .listArea {
+    max-height: 300px;
+    overflow-y: scroll;
+    padding: 0 80px; }
+    .container .listArea ul {
+      padding: 0;
+      min-height: 300px;
+      background-color: #eff8ff; }
+      .container .listArea ul .item {
+        list-style-type: none;
+        height: 60px;
+        font-size: 1.7em;
+        font-family: "Caveat", cursive;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        overflow: scroll;
+        border-bottom: 2px solid #55abf6; }
+        .container .listArea ul .item:hover {
+          background-color: #c2e0f8; }
+        .container .listArea ul .item:active {
+          background-color: #afd6f8; }
+        .container .listArea ul .item .removeItem {
+          background-color: inherit;
+          border: none;
+          outline: none;
+          font-family: sans-serif;
+          color: #91ccff;
+          padding: 7px; }
+          .container .listArea ul .item .removeItem i::before {
+            padding: 10px;
+            padding-top: 14px; }
+          .container .listArea ul .item .removeItem:hover {
+            color: #279aff;
+            font-size: 1.1em; }
+          .container .listArea ul .item .removeItem:active {
+            outline: none;
+            color: #005fb3; }
+        .container .listArea ul .item input {
+          align-items: center; }
+  .container .buttonsArea {
+    padding: 0 80px; }
+    .container .buttonsArea .btn {
+      height: 50px;
+      font-family: "Calistoga", cursive; }
+
+.completed {
+  background-color: #b8b8b8;
+  color: white; }
+  .completed span {
+    text-decoration: line-through; }
+  .completed:hover {
+    background-color: #dadada !important; }
+  .completed:active {
+    background-color: lightgray !important; }
+
+hr {
+  height: 1px;
+  background-color: #55abf6;
+  margin: 0; }
+
+.hiden {
+  display: none !important; }
